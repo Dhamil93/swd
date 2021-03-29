@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("css.png");
+            font-family: "Arial Rounded MT Bold",sans-serif;
+            font-size: larger;
+            line-height: 1.5rem;
+        }
+        :any-link{
+            text-decoration: none;
+            color: blue;
+            font-weight: bolder;
+        }
+        button{
+            background-color: azure;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<header>
+    <div class="header">
+        <p><h2>Delete Note</h2></p>
+        <p>Please Insert your names and your email to confirm</p>
+    </div>
+    <div class="options">
+        <ul>
+            <li><a href="homepage.html">Home page</a></li>
+            <li><a href="add.html">Add Details </a></li>
+            <li><a href="edit.html">Edit Details </a></li>
+        </ul>
+    </div>
+</header>
+<body>
+<form action="delete.php" method="post">
+<fieldset>
+    <legend>Note Deletion</legend>
+    <label for="name"> Name: </label>
+    <input type="text" name="name"><br>
+    <br>
+    <label for="email"> Email: </label>
+    <input type="text" name="email"><br>
+    <br>
+</fieldset>
+<div class="submit">
+    <input type="submit" name="delete" value="Delete">
+</div>
+</form>
+</body>
+</html>

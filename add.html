@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("css.png");
+            font-family: "Arial Rounded MT Bold",sans-serif;
+            font-size: larger;
+            line-height: 1.5rem;
+        }
+        :any-link{
+            text-decoration: none;
+            color: blue;
+            font-weight: bolder;
+        }
+        button{
+            background-color: azure;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+    <header>
+        <p><h2>Add Details and Note</h2></p>
+
+    </header>
+</head>
+<div class="options">
+    <ul>
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="edit.html">Edit Details </a></li>
+        <li><a href="delete.html">Delete Details</a></li>
+    </ul>
+</div>
+<body>
+<form action="add.php" method="post">
+<fieldset>
+    <legend>Personal Information:</legend>
+    <div class="information">
+        <label for="name"> Full Name</label>
+        <input type="text" name="name"><br>
+        <br>
+        <label for="gender"> Gender: </label><br>
+        <input type="radio" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <br>
+        <label for="email"> Email:</label>
+        <input type="text" name="email"><br>
+        <br>
+        <label for="note"> Note: </label>
+        <textarea name="note" rows="5" cols="40"></textarea><br><br>
+    </div>
+</fieldset>
+<div class="submit">
+    <input type="submit" id="submit" name="submit">
+</div>
+</form>
+</body>
+</html>

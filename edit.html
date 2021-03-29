@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("css.png");
+            font-family: "Arial Rounded MT Bold",sans-serif;
+            font-size: larger;
+            line-height: 1.5rem;
+        }
+        :any-link{
+            text-decoration: none;
+            color: blue;
+            font-weight: bolder;
+        }
+        button{
+            background-color: azure;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<header>
+    <div class="header">
+        <p><h2>Edit Page</h2></p>
+    </div>
+    <div class="options">
+
+        <ul>
+            <li><a href="homepage.html">Home page</a></li>
+            <li><a href="add.html">Add Details </a></li>
+            <li><a href="delete.html">Delete Details</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+<form action="edit.php" method="post">
+    <fieldset>
+        <legend>
+            Edit Section
+        </legend>
+        <label for="edit">
+            Please Type in your full Names?
+        </label><br>
+        <br>
+        <input type="text" name="name"><br>
+        <br>
+        <input type="submit" name="submit" value="Submit"><br>
+    </form>
+    </fieldset>
+</body>
+</html>
